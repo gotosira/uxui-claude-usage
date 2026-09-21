@@ -340,7 +340,7 @@ export function SearchModal() {
             </>
           )}
         </div>
- mar
+
         <div className="axio-search-footer">
           <span>
             <kbd className="axio-kbd">↑</kbd>
