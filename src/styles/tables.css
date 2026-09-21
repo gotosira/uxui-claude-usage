@@ -691,13 +691,3 @@
     max-height: calc(100vh - 16px);
   }
 }
-
-.axio-donut {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
-  align-items: center;
-  min-width: 0;
-}
-
-@media (min-width: 800px) {
