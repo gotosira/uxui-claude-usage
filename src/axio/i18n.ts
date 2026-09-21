@@ -434,7 +434,7 @@ export const translations = {
     chartPeak: 'สูงสุด',
     rankSearch: 'ค้นหาในอันดับนี้',
     helpDailyAvg: 'ยอดสุทธิหารด้วยจำนวนวันของเดือนที่เลือก กันยายนมี 15 วัน',
-    helpRoster: 'มีอีเมลทีม UX/UI Designer กี่คนที่โผ่ในไฟล์ที่โหลดมา',
+    helpRoster: 'มีอีเมลทีม UX/UI Designer กี่คนที่โผล่ในไฟล์ที่โหลดมา',
     insightOpen: 'ใช้เยอะสุด',
     peopleTitle: 'คน',
     peopleSubtitle: 'รายชื่อทีม UX/UI Designer คลิกที่คนเพื่อดูรายละเอียดทั้งหมดจากไฟล์',
