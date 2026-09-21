@@ -1,0 +1,226 @@
+.axio-page-head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 800px) {
+  .axio-page-head {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+  }
+}
+
+.axio-page-head h1 {
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+.axio-page-lede {
+  color: var(--color-muted-foreground);
+  font-size: var(--text-sm);
+  max-width: 560px;
+  line-height: 1.45;
+}
+
+.axio-page-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-muted-foreground);
+}
+
+.axio-page-meta span + span::before {
+  content: '·';
+  margin-right: 12px;
+  color: var(--color-border);
+}
+
+.axio-kpi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 1100px) {
+  .axio-kpi-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.axio-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.axio-chart-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.axio-chart-grid > * {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.axio-chart-host {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 1100px) {
+  .axio-chart-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.axio-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.axio-toolbar-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.axio-toolbar-row .axio-field {
+  flex: 1;
+  min-width: 160px;
+}
+
+.axio-period-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.axio-period-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-full);
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-muted-foreground);
+}
+
+.axio-period-chip:hover {
+  background: var(--color-card);
+  color: var(--color-foreground);
+}
+
+.axio-period-chip.is-active {
+  background: var(--color-card);
+  color: var(--color-accent-foreground);
+  font-weight: var(--font-weight-semibold);
+  box-shadow: var(--elevation-sm);
+}
+
+.axio-period-all {
+  margin-left: 4px;
+}
+
+.axio-period-chip .swatch {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.axio-period-chip small {
+  display: none;
+}
+
+.axio-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.axio-legend button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border: 1px solid var(--color-border);
+  background: var(--color-card);
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: var(--font-weight-regular);
+  cursor: pointer;
+}
+
+.axio-legend button.is-active {
+  background: var(--color-accent);
+  color: var(--color-accent-foreground);
+  border-color: transparent;
+}
+
+.axio-swatch {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: var(--radius-full);
+}
+
+.axio-compare-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+@media (min-width: 700px) {
+  .axio-compare-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.axio-compare-stat {
+  background: var(--color-info-background);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.axio-compare-stat strong {
+  display: block;
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-semibold);
+  margin: 4px 0;
+}
+
+.axio-compare-stat small {
+  font-size: 12px;
+  color: var(--color-muted-foreground);
+}
+
+.axio-compare-stat .axio-stat-label {
+  font-size: 12px;
+}
+
+.axio-tag-static {
+  cursor: default;
+}
+
+.axio-tag-static:hover {
+  background: var(--color-card);
+}
