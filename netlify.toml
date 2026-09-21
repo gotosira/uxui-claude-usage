@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "mkdir -p public/data && cp -n data/*.csv public/data/ || true && npm run build"
   publish = "dist"
 
 [build.environment]
