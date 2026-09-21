@@ -1,0 +1,90 @@
+.axio-content {
+  flex: 1;
+  min-width: 0;
+  overflow: auto;
+  padding: 24px 16px 40px;
+}
+
+.axio-filter-rail {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 -16px 20px;
+  padding: 0 16px 12px;
+  background: var(--color-info-background);
+  border-bottom: 1px solid var(--color-sidebar-border);
+}
+
+.axio-text-link {
+  border: none;
+  background: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  padding: 0;
+}
+
+.axio-text-link:hover {
+  opacity: 0.8;
+}
+
+.axio-snapshot-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.axio-snapshot-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.axio-snapshot-list button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font-weight: var(--font-weight-regular);
+}
+
+.axio-snapshot-list button:hover {
+  background: var(--color-muted);
+}
+
+.axio-snapshot-label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--text-sm);
+}
+
+.axio-snapshot-list strong {
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+@media (min-width: 900px) {
+  .axio-content {
+    padding: 24px;
+  }
+}
+
+.axio-sidebar-backdrop {
+  display: none;
+}
